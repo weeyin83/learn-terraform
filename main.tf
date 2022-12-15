@@ -15,7 +15,7 @@ terraform {
     organization = "Slate-Rock"
 
     workspaces {
-      name = "learn-terraform"
+      name = "terraform-aws"
     }
   }
 }
