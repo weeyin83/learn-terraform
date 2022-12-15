@@ -49,9 +49,9 @@ jobs:
     
     - uses: actions/github-script@v6
       if: github.event_name == 'pull_request'
-        env:
+      env:
           PLAN: "terraform\n${{ steps.plan.outputs.stdout }}"
-        with:
+      with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const output = `#### Terraform Format and Style 🖌\`${{ steps.fmt.outcome }}\`
