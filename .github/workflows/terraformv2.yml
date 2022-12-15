@@ -2,12 +2,7 @@ name: Terraform AWS Workflow
 
 on:
   workflow_dispatch:
-    # Inputs the workflow accepts.
 
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
   tf_code_check:
